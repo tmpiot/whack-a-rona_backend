@@ -47,4 +47,5 @@ public class ScoreService {
     public void deleteScore(int id) {
         scoreRepo.deleteById(id);
     }
+
 }
