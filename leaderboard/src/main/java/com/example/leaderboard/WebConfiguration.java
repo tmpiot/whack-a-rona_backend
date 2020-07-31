@@ -1,6 +1,5 @@
 package com.example.leaderboard;
 
-
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +29,7 @@ public class WebConfiguration extends WebSecurityConfigurerAdapter {
             .httpBasic()
             .and()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/Leaderboard").permitAll()
+                .antMatchers(HttpMethod.GET, "/Leaderboard/score").permitAll()
                 .anyRequest().authenticated()
             .and()
                 .cors()

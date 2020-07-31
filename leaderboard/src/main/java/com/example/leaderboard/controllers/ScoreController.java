@@ -31,11 +31,6 @@ public class ScoreController
         return scoreService.getScoreList();
     }
 
-    @GetMapping("/score/{userName}")
-    public List<Score> getbyUsername(@PathVariable("userName") String name) {
-        return scoreService.getScoreList();
-    }
-
     @PostMapping("/score")
     public Score addScore(@RequestBody Score score) {
         return scoreService.addScore(score);
